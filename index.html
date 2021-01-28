@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Bootstrap</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-light bg-light fixed-top px-5">
+           <div class="navbar-header mx-5">
+                <span class="navbar-brand text-secondary"><h3><i class="fab fa-instagram ml-5 mr-2"></i><strong>Instagram</strong></h3></span>
+           </div>
+           <div class="navbar navbar-left mx-5">
+                <!-- Recordar estos es un boton del modal -->
+               <a href="#Modal1" role="button" class="btn btn-success" data-toggle="modal" data-backdrop="false">Crear publicacion</a>
+                <!-- Recordar esto es un modal -->
+               <div id="Modal1" data-backdrop="false" class="modal fade mx-3" tabindex="-1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <div class="form-group row px-3">
+                                    <textarea class="form-control" rows="3" id="Comment ..."></textarea>
+                                </div>
+                                <div class="icons">
+                                    <button type="button" class="btn btn-outline-dark"><i class="fas fa-camera"></i></button>
+                                    <button type="button" class="btn btn-outline-dark"><i class="fas fa-map-marker-alt"></i></button>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-light" data-dismiss="modal">Cancelar</button>
+                                <button type="button" class="btn btn-success">Publicar</button>
+                            </div>
+                        </div>
+                    </div>
+              </div>
+              <div class="dropdown mr-5">
+                  <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="fas fa-cog text-secondary ml-1"></i>
+                  </button>
+                  <div class="dropdown-menu mr-5" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Perfil</a>
+                      <a class="dropdown-item" href="#">Configuraciones</a>
+                      <a class="dropdown-item" href="#">Personalizar</a>
+                      <hr/>
+                      <a class="dropdown-item" href="#">Salir</a>
+                   </div>
+               </div>
+          </div>       
+        </nav>
+    </header>
+    <nav class="pt-4 m-3">
+        <ul class="nav nav-pills d-flex justify-content-center pt-5" id="nav-pills" role="tablist">
+            <li class="nav-item" role="presentation">
+                <span class="nav-link active bg-light text-secondary" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
+                    aria-controls="pills-home" aria-selected="true"><i class="fas fa-th"></i>
+                </span>
+            </li>
+            <li class="nav-item" role="presentation">
+                <span class="nav-link bg-light text-secondary" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
+                    aria-controls="pills-profile" aria-selected="false"><i class="fas fa-square"></i>
+                </span>
+            </li>
+        </ul>
+    </nav>
+    <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+            <div class="container-fluid">
+                <div class="row card-group">
+                    <div class="card">
+                        <img src="https://s3.eu-west-3.amazonaws.com/dexertoes-assets-production-7d0f29e6/uploads/thumbnails/_thumbnailLarge/Yuumi-lol.jpg" class="card-img-top" alt="first image">
+                    </div>
+                    <div class="card">
+                        <img src="https://e00-marca.uecdn.es/assets/multimedia/imagenes/2019/12/29/15776091164195.jpg" class="card-img-top" alt="secondary image">
+                    </div>
+                    <div class="card">
+                        <img src="https://img.microsiervos.com/images2018/Classic_Irelia_Splash.jpg" class="card-img-top" alt="third image">
+                    </div>
+                </div>
+                <div class="row card-group">
+                    <div class="card">
+                        <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blta6148d8dca105d6b/5db05ff1e9effa6ba5295fa7/RiotX_ChampionList_qiyana.jpg?quality=90&width=250" class="card-img-top" alt="fourth image">
+                    </div>
+                    <div class="card">
+                        <img src="https://depor.com/resizer/f3AkNtsFz8Ys9hkByKmc5cDLf2A=/640x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/ROFPPIWVONCNHPYOOM43BZG7XQ.jpg" class="card-img-top" alt="fifth image">
+                    </div>
+                    <div class="card">
+                        <img src="https://esports.eldesmarque.com/wp-content/uploads/2019/09/Quinn_OriginalCentered.jpg" class="card-img-top" alt="sixth image">
+                    </div>
+                </div>
+            </div>
+        </div>    
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-8 d-flex flex-column">
+                        <div class="card mb-3 p-1">
+                            <div class="card-header d-flex justify-content-between">
+                                <h5>Dota 2</h5>
+                                <p class="text-muted">1/3</p>
+                            </div>
+                            <div class="card-body">
+                            <img src="https://estnn.com/wp-content/uploads/2019/09/dota-2-header.jpg" class="img-fluid" alt="first image">
+                            <p><strong>10 likes</strong></p>
+                            <p class="card-text">Dota 2 es un videojuego perteneciente al género de Arena de batalla en línea ARTS, también conocido como MOBA, lanzado el 9 de julio del año 2013. </p>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <p class="card-text"><small class="text-muted">🤍 Comment ...</small></p>
+                                </div>
+                                <div class="text-muted right">
+                                    <i class="fas fa-ellipsis-v "></i>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3 p-1">
+                            <div class="card-header d-flex justify-content-between">
+                                <h5>League of Legends</h5>
+                                <p class="text-muted">2/3</p>
+                            </div>
+                            <div class="card-body">
+                            <img src="https://esports.eldesmarque.com/wp-content/uploads/2019/09/LoL2.jpg" class="img-fluid" alt="second image">
+                            <p><strong>35 likes</strong></p>
+                            <p class="card-text">League of Legends es un videojuego del género multijugador de arena de batalla en línea y deporte electrónico el cual fue desarrollado por Riot Games para Microsoft Windows y OS X y para consolas digitales. </p>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <p class="card-text"><small class="text-muted">🤍 Comment ...</small></p>
+                                </div>
+                                <div class="text-muted right">
+                                    <i class="fas fa-ellipsis-v "></i>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3 p-1">
+                            <div class="card-header d-flex justify-content-between">
+                                <h5>Hero of Storm</h5>
+                                <p class="text-muted">3/3</p>
+                            </div>
+                            <div class="card-body">
+                            <img src="https://static.heroesofthestorm.com/images/global/fb-share-1fcc54becc.jpg" class="img-fluid" alt="third image">
+                            <p><strong>20 likes</strong></p>
+                            <p class="card-text">Heroes of the Storm es un videojuego multijugador de arena de batalla en línea. El juego fue lanzado en un evento Live Stream, el 06.06.2015. </p>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <p class="card-text"><small class="text-muted">🤍 Comment ...</small></p>
+                                </div>
+                                <div class="text-muted right">
+                                    <i class="fas fa-ellipsis-v "></i>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
